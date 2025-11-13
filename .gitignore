@@ -1,0 +1,38 @@
+# Global Python ignores
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment variables
+backend/.env
+.env
+
+# Logs
+*.log
+
+# IDE stuff
+.vscode/
+.idea/
+
+# Node modules (frontend)
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# Build folders
+dist/
+build/
+
+# Uploaded files
+backend/uploads/
+backend/ingest/
+
+# Reports or outputs
+backend/reports/
+*.pdf
+
+# Vector database (Chroma)
+backend/chroma/
+backend/chroma_db/

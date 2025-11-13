@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+motor            # if you later want Mongo (optional)
+langchain
+langgraph        # if available; otherwise install relevant package or pip install git+url
+chromadb
+openai
+python-multipart # for file uploads
+requests
+loguru
+# pytest pytest-asyncio httpx
