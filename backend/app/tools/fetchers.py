@@ -1,5 +1,6 @@
-from langchain.tools import tool
+from langchain_core.tools import tool
 import pandas as pd
+import json
 
 @tool
 def fetch_csv(path: str) -> str:
@@ -22,4 +23,4 @@ def fetch_csv(path: str) -> str:
         "column_names": list(df.columns),
         "head": df.head(5).to_dict(orient="records")
     }
-    return str(summary)
+    return json.dumps(summary)

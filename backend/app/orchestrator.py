@@ -60,7 +60,8 @@ app_graph = workflow.compile()
 if __name__ == "__main__":
     import asyncio
 
-    user_message = "Read this CSV file: test.csv"
+    user_message = "backend/uploads/test.csv"
+
 
     result = asyncio.run(app_graph.ainvoke({"user_input": user_message}))
 
